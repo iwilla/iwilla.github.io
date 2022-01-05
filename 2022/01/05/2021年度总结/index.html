@@ -6,21 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://wwww.laihuqing.top">
-  <title>7条常用的git指令实现代码管理 | Lai</title>
+  <title>Lai</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="由于老是忘记这里指令，便记录在这里 一些初始化工作： 123git config --global user.name  laihuqinggit config --global user.email 3512085606@qq.com     初始化git 1init git 将本地项目保存到暂存区 1git add . 将项目从暂存区提交到本地仓库 1git commit -m &quot;注">
+  <meta name="description" content="2021年度总结求学之路路漫漫。一年走来，或辛酸，或快乐，多种情绪交织。还好自己都挺过来了，感谢自己没有放弃，不然可能也不会那么清晰地认识到自己。觉得曾经自己略显矫情（也可能是想证明什么吧），老是爱向人说自己有多么的努力。不知哪天，脑子一抽抽，竟得出些许粗鄙浅显的道理。为什么要觉得自己辛苦呢？哪个人不是负重前行呢？ 你在给别人说这些的时候不觉得很可笑嘛？考研大军的百万雄师，谁又不努力呢？私以为，不">
 <meta property="og:type" content="article">
-<meta property="og:title" content="7条常用的git指令实现代码管理">
-<meta property="og:url" content="https://wwww.laihuqing.top/2021/06/13/7%E6%9D%A1%E5%B8%B8%E7%94%A8%E7%9A%84git%E6%8C%87%E4%BB%A4/index.html">
+<meta property="og:title" content="Lai">
+<meta property="og:url" content="https://wwww.laihuqing.top/2022/01/05/2021%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/index.html">
 <meta property="og:site_name" content="Lai">
-<meta property="og:description" content="由于老是忘记这里指令，便记录在这里 一些初始化工作： 123git config --global user.name  laihuqinggit config --global user.email 3512085606@qq.com     初始化git 1init git 将本地项目保存到暂存区 1git add . 将项目从暂存区提交到本地仓库 1git commit -m &quot;注">
+<meta property="og:description" content="2021年度总结求学之路路漫漫。一年走来，或辛酸，或快乐，多种情绪交织。还好自己都挺过来了，感谢自己没有放弃，不然可能也不会那么清晰地认识到自己。觉得曾经自己略显矫情（也可能是想证明什么吧），老是爱向人说自己有多么的努力。不知哪天，脑子一抽抽，竟得出些许粗鄙浅显的道理。为什么要觉得自己辛苦呢？哪个人不是负重前行呢？ 你在给别人说这些的时候不觉得很可笑嘛？考研大军的百万雄师，谁又不努力呢？私以为，不">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="c:/Users/laihuqing/AppData/Roaming/Typora/typora-user-images/image-20210613112554290.png">
-<meta property="article:published_time" content="2021-06-13T03:02:30.591Z">
-<meta property="article:modified_time" content="2021-06-13T06:33:58.140Z">
+<meta property="article:published_time" content="2022-01-05T01:30:29.120Z">
+<meta property="article:modified_time" content="2022-01-03T01:27:03.613Z">
 <meta property="article:author" content="laihuqing">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="c:/Users/laihuqing/AppData/Roaming/Typora/typora-user-images/image-20210613112554290.png">
   
     <link rel="alternative" href="/atom.xml" title="Lai" type="application/atom+xml">
   
@@ -164,71 +162,36 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-7条常用的git指令" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-2021年度总结" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      7条常用的git指令实现代码管理
-    </h1>
-  
-
-        <!--显示阅读次数-->
-        
-          <br/>
-          <a class="cloud-tie-join-count" href="javascript:void(0);" style="color:gray;font-size:14px;">
-          <span class="icon-sort"></span>
-          <span id="busuanzi_container_page_pv" style="color:#ef7522;font-size:14px;">
-                    阅读数: <span id="busuanzi_value_page_pv"></span>次 &nbsp;&nbsp;
-          </span>
-          </a>
-          
-        
-        <a href="/2021/06/13/7%E6%9D%A1%E5%B8%B8%E7%94%A8%E7%9A%84git%E6%8C%87%E4%BB%A4/" class="archive-article-date">
-  	<time datetime="2021-06-13T03:02:30.591Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-06-13</time>
-</a>
-        
-      </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="由于老是忘记这里指令，便记录在这里"><a href="#由于老是忘记这里指令，便记录在这里" class="headerlink" title="由于老是忘记这里指令，便记录在这里"></a>由于老是忘记这里指令，便记录在这里</h2><p><img src="C:\Users\laihuqing\AppData\Roaming\Typora\typora-user-images\image-20210613112554290.png" alt="image-20210613112554290"></p>
-<p>一些初始化工作：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name  laihuqing</span><br><span class="line">git config --global user.email 3512085606@qq.com</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-
-<ol>
-<li><p>初始化git</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">init git</span><br></pre></td></tr></table></figure></li>
-<li><p>将本地项目保存到暂存区</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br></pre></td></tr></table></figure></li>
-<li><p>将项目从暂存区提交到本地仓库</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m &quot;注释&quot;</span><br></pre></td></tr></table></figure></li>
-<li><p> 配置远程仓库地址</p>
+        <h1 id="2021年度总结"><a href="#2021年度总结" class="headerlink" title="2021年度总结"></a>2021年度总结</h1><p>求学之路路漫漫。一年走来，或辛酸，或快乐，多种情绪交织。还好自己都挺过来了，感谢自己没有放弃，不然可能也不会那么清晰地认识到自己。觉得曾经自己略显矫情（也可能是想证明什么吧），老是爱向人说自己有多么的努力。不知哪天，脑子一抽抽，竟得出些许粗鄙浅显的道理。为什么要觉得自己辛苦呢？哪个人不是负重前行呢？</p>
+<p>你在给别人说这些的时候不觉得很可笑嘛？考研大军的百万雄师，谁又不努力呢？私以为，不能随意地逢人吐槽自己多么的努力，从中来找到渺茫的希望来安慰自己：“我一定可以的”。其实大可不必这样，不如埋头努力在学业的土地上深耕。</p>
+<p>在这一年来，总结了一些自己应该做好的地方：</p>
+<p>1.尽量减少外来信息的干扰。平时少刷知乎，少刷B站上的娱乐视频（如果要刷请记笔记，减少麻木）并构建其自己的信息防火墙。但又要避免形成信息茧房，获得信息种类过于单一，应多与朋友交流来减少自己变成孤陋寡闻的呆瓜的可能性。</p>
+<p>2.壮其体魄。考研前期，健身过度，无奈膝盖受伤，下雨天状态很是不好。中期，争分夺秒为了多学会儿，早上去公共澡堂洗澡没有吹头，风风火火地奔向图书馆，坐在正对中央空调的位置上，身体素质不复昔日。后期，到了冬天，由于疫情，图书馆馆内开窗通风，冷风一吹就感冒了。身体上的伤痛容易磨灭意志。新青年的6条标准，毛主席又加上了一条：强壮的而非体弱的。我很是赞同，在通读毛泽东传中，里面有段描述毛主席在长江游泳的情形—–到中流击水，浪遏飞舟。不免为之振奋，想着一定要学会游泳。（还不伤膝盖）</p>
+<p>3.提高决策力。这个我深有体会，遇到问题时，向朋友求助。得到的结果是不同的，从中也可以看出人与人之间的思维差异。若是以前我可能会被眼前的景象所蒙蔽，而徘徊不前。现在，通过和朋友沟通，和对马克思唯物辩证法的粗糙学习。大抵是，形成了遇到问题，解决的问题的模式。先简化问题，抽离其本质。然后给出大体的方案，再细化问题。同时注意可行性和灵活性。PS：一定要有deadline!!!永远不要高估自己。</p>
+<p>4.多与朋友交流。 无论是什么样的人，都有自己的长处。要发掘和吸取别人做的好的地方，做法。在审视别人的缺点时，也要看看自己身上是不是有，不要到时候要让别人提出。（这是我之前没有注意的） </p>
+<p>5.保持平和。这点我觉得是最难做到的。开卷有益，多读书，看看哲人是如何解决问题的。多听听身边有智慧的人教诲。</p>
+<p>2022待完成：</p>
+<p>生活上：</p>
+<ul>
+<li>学会游泳</li>
+<li>掌握做饭手艺更上一层楼。（鱼脱骨，刀工，对火候的把握，和一些基本常识）   制作灌汤包，鸡爪煲等</li>
+<li>形成自己的第二脑。先构建一个简单的知识体系，然后其不断优化，形成一个较为完整的知识体系。还要加强对信息的采集，处理。</li>
+<li>给自己留下空余时间去沉淀。那个时间属于自己。</li>
+<li>多关爱自己，上一年把心思全放在考试上。接下来的一年在8-10小时工作制（动态调配）下，请多多关照自己，身体护理，头发护理，健身，瑜伽。发展兴趣</li>
+</ul>
+<p>学业or工作上（暂定）：</p>
+<ul>
+<li><p>利用好过渡期。过一遍微机与接口</p>
 </li>
-</ol>
-   <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add 仓库别名 仓库地址</span><br></pre></td></tr></table></figure>
-
-<ol start="3">
-<li><p>将本地仓库项目提交到远程仓库</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push -u 仓库别名  master</span><br></pre></td></tr></table></figure></li>
-<li><p>同步远程仓库的最新版本</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull</span><br></pre></td></tr></table></figure>
-
-<p>[^实际的工程中，每次都要git pull 一下保证本地版本为最新版本]: </p>
+<li><p>学习一门新语言JS，用一遍vue框架</p>
+<p>上面几点说的很抽象，由于年度报告篇幅问题不便把具体步骤列出来。这里大致指明方向，根据来动态调整。</p>
 </li>
-<li><p>克隆远程仓库的代码到本地</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone</span><br></pre></td></tr></table></figure></li>
-</ol>
-<p>如果是修改后的文件，只需要输入3行命令</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br><span class="line">git push -u 别名 master</span><br><span class="line">git pull</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>踩坑记录：</p>
-<p>把这里命令用于hexo 博客中上传了，结果就，，，，</p>
-<p>这里只能用于普通项目的更新和管理！</p>
+</ul>
 
       
 
@@ -308,7 +271,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://wwww.laihuqing.top/2021/06/13/7%E6%9D%A1%E5%B8%B8%E7%94%A8%E7%9A%84git%E6%8C%87%E4%BB%A4/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://wwww.laihuqing.top/2022/01/05/2021%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -322,18 +285,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2022/01/05/2021%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          (no title)
-        
-      </div>
-    </a>
   
-  
-    <a href="/2021/05/27/%E5%8D%9A%E5%AE%A2%E7%BB%B4%E6%8A%A4/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">博客部署命令</div>
+    <a href="/2021/06/13/7%E6%9D%A1%E5%B8%B8%E7%94%A8%E7%9A%84git%E6%8C%87%E4%BB%A4/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">7条常用的git指令实现代码管理</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -360,7 +314,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%B1%E4%BA%8E%E8%80%81%E6%98%AF%E5%BF%98%E8%AE%B0%E8%BF%99%E9%87%8C%E6%8C%87%E4%BB%A4%EF%BC%8C%E4%BE%BF%E8%AE%B0%E5%BD%95%E5%9C%A8%E8%BF%99%E9%87%8C"><span class="toc-number">1.</span> <span class="toc-text">由于老是忘记这里指令，便记录在这里</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#2021%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93"><span class="toc-number">1.</span> <span class="toc-text">2021年度总结</span></a></li></ol>
                     </div>
                 </span>
             </div>
